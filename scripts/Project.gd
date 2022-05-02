@@ -1,7 +1,7 @@
 extends Button
 
-onready var tasks = $GridContainer
 onready var content = $TextEdit
+onready var tasks = $GridContainer
 var new_task = load("res://scenes/Task.tscn")
 
 func _ready():

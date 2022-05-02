@@ -1,10 +1,11 @@
 extends Button
+
 onready var content = $TextEdit
 onready var todos = $GridContainer
 var new_todo = load("res://scenes/Todo.tscn")
 
 func _ready():
-	todos.set_global_position(Vector2(400, 0))
+	todos.set_global_position(Vector2(2*rect_size.x, 0))
 	_on_Button3_pressed()
 
 func _on_Button_pressed():
